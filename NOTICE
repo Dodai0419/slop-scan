@@ -1,0 +1,13 @@
+slop-scan
+Copyright (c) 2026 Dodai0419, MIT License.
+
+The design tells, their fixes, the contrast thresholds and the contrast reference
+table (tests/fixtures/antislop-contrast-table.md) come from anti-slop:
+  https://github.com/miqdadbadjuber/anti-slop
+  MIT License, Copyright (c) 2026 Miqdad Badjuber (antislop)
+
+The report structure (signatures with tiers, evidence per hit, ran / could-not-run
+coverage per check) follows the idea of Zero-Breach-Toolkit:
+  https://github.com/interplains/Zero-Breach-Toolkit
+  Apache License 2.0, Copyright 2026 archivegenocide.com
+  No source code from Zero-Breach-Toolkit is included.

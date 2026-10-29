@@ -1,0 +1,1 @@
+{"name": "slop-scan", "owner": {"name": "Dodai0419"}, "plugins": [{"name": "slop-scan", "source": "./", "description": "See every AI-slop tell on your page, circled in red pen, with the fix next to it."}]}

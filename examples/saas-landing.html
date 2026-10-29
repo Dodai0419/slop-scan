@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nexora: AI workflow platform</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, "Segoe UI", system-ui, sans-serif; color: #111827; background: #ffffff;
+         background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 24px 24px; }
+  nav { position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; padding: 16px 48px;
+        background: rgba(255,255,255,.6); backdrop-filter: blur(12px); border-bottom: 1px solid #eef; }
+  nav .logo { font-weight: 800; font-size: 20px; }
+  nav a { margin-left: 24px; color: #374151; text-decoration: none; font-size: 15px; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 999px; font-weight: 600; text-decoration: none;
+         background: linear-gradient(90deg, #3b82f6, #8b5cf6); color: #fff; box-shadow: 0 0 24px rgba(139,92,246,.55); }
+  .btn.ghost { background: rgba(255,255,255,.7); color: #4c1d95; box-shadow: 0 0 18px rgba(59,130,246,.35); border: 1px solid #c4b5fd; }
+  .hero { margin: 40px 48px; padding: 96px 48px; text-align: center; border-radius: 32px; color: #fff;
+          background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%); }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; font-size: 13px;
+             border: 1px solid rgba(255,255,255,.5); background: rgba(255,255,255,.15); backdrop-filter: blur(8px); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 10px #34d399; animation: pulse 1.6s infinite; }
+  @keyframes pulse { 50% { opacity: .3; transform: scale(1.6); } }
+  h1 { font-size: 60px; line-height: 1.05; margin: 22px auto 18px; max-width: 900px; letter-spacing: -0.02em; }
+  .hero p { font-size: 20px; opacity: .9; max-width: 640px; margin: 0 auto 32px; }
+  .label { text-transform: uppercase; letter-spacing: .2em; font-size: 12px; font-weight: 700; color: #7c3aed; }
+  section { padding: 56px 48px; text-align: center; }
+  .logos { display: flex; justify-content: center; gap: 48px; color: #9ca3af; font-size: 20px; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; text-align: left; }
+  .card { padding: 28px; border-radius: 24px; background: rgba(255,255,255,.55); backdrop-filter: blur(16px);
+          border-left: 4px solid #8b5cf6; box-shadow: 0 20px 50px rgba(17,24,39,.12); }
+  .card h3 { margin: 0 0 8px; font-size: 20px; }
+  .card p { margin: 0; color: #9ca3af; font-size: 15px; line-height: 1.5; }
+  .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; background: #ede9fe; color: #6d28d9;
+          box-shadow: 0 0 12px rgba(139,92,246,.6); margin-bottom: 12px; }
+  .float { animation: float 4s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-8px); } }
+  ul.ticks { list-style: none; padding: 0; margin: 24px auto; max-width: 520px; text-align: left; font-size: 17px; line-height: 2; }
+  .shot { margin: 24px auto 0; display: block; border-radius: 20px; box-shadow: 0 30px 80px rgba(79,70,229,.25); max-width: 760px; }
+  footer { padding: 40px 48px; color: #9ca3af; font-size: 14px; text-align: center; }
+</style>
+</head>
+<body>
+<nav>
+  <span class="logo">Nexora</span>
+  <span><a href="#">Features</a><a href="#">Pricing</a><a href="#">Docs</a>
+  <a class="btn ghost" href="#">Sign in →</a></span>
+</nav>
+
+<header class="hero">
+  <span class="eyebrow"><span class="dot"></span>AI-Powered Workflow Platform</span>
+  <h1>🚀 Supercharge your workflow with AI</h1>
+  <p>Unlock the power of intelligent automation. Nexora helps modern teams ship faster, smarter, and better.</p>
+  <a class="btn" href="#">Get started free →</a>
+  <a class="btn ghost" href="#">Watch demo ↗</a>
+</header>
+
+<section>
+  <div class="label">Trusted by</div>
+  <div class="logos" style="margin-top:20px"><span>ACME</span><span>Globex</span><span>Initech</span><span>Umbrella</span></div>
+</section>
+
+<section>
+  <div class="label">Features</div>
+  <h2 style="font-size:40px;margin:12px 0 0">✨ Everything you need, all in one place</h2>
+  <div class="grid">
+    <div class="card float"><span class="pill">New</span><h3>⚡ Lightning fast</h3><p>Blazing-fast performance that scales with your team.</p></div>
+    <div class="card float"><span class="pill">AI Powered</span><h3>🧠 Smart insights</h3><p>Actionable insights powered by cutting-edge AI.</p></div>
+    <div class="card float"><span class="pill">Beta</span><h3>🔒 Enterprise security</h3><p>Bank-grade security you can trust, out of the box.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="label">Why Nexora</div>
+  <ul class="ticks">
+    <li>✅ Seamless integrations with your stack</li>
+    <li>✅ Real-time collaboration for every team</li>
+    <li>✅ 24/7 support from real humans</li>
+  </ul>
+  <img class="shot" alt="Product screenshot" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='760' height='300'><rect width='760' height='300' rx='20' fill='%23eef2ff'/><rect x='30' y='30' width='200' height='240' rx='12' fill='%23c7d2fe'/><rect x='250' y='30' width='480' height='110' rx='12' fill='%23ddd6fe'/><rect x='250' y='160' width='480' height='110' rx='12' fill='%23e0e7ff'/></svg>">
+  <p style="margin-top:32px"><a class="btn" href="#">Start your free trial →</a></p>
+</section>
+
+<footer>© 2026 Nexora. All rights reserved.</footer>
+</body>
+</html>

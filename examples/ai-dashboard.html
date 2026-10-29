@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PulseOps dashboard</title>
+<style>
+  body { margin: 0; font-family: "Space Grotesk", system-ui, sans-serif; background: #0b0b12; color: #e5e7eb;
+         background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+         background-size: 32px 32px; }
+  .shell { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+  .side { padding: 24px 16px; background: rgba(20,20,35,.6); backdrop-filter: blur(14px); border-right: 1px solid #222238; }
+  .side a { display: block; padding: 10px 14px; margin-bottom: 4px; color: #9ca3af; text-decoration: none; border-radius: 10px; font-size: 14px; }
+  .side a.on { color: #fff; background: rgba(124,58,237,.18); border-left: 3px solid #a78bfa; }
+  main { padding: 28px 36px; }
+  h1 { font-family: "JetBrains Mono", monospace; font-size: 30px; margin: 0 0 4px; }
+  .sub { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .stat { padding: 20px; border-radius: 18px; background: rgba(30,30,50,.55); backdrop-filter: blur(12px);
+          border: 1px solid rgba(167,139,250,.25); box-shadow: 0 0 22px rgba(124,58,237,.35); }
+  .stat .k { text-transform: uppercase; letter-spacing: .18em; font-size: 11px; color: #6b7280; }
+  .stat .v { font-size: 32px; font-weight: 700; margin-top: 8px; }
+  .stat .d { font-size: 13px; color: #34d399; }
+  .live { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #22d3ee; box-shadow: 0 0 12px #22d3ee;
+          animation: blink 1.2s infinite; margin-right: 6px; }
+  @keyframes blink { 50% { opacity: .2; } }
+  .panel { margin-top: 22px; padding: 22px; border-radius: 18px; background: rgba(30,30,50,.55); backdrop-filter: blur(12px);
+           border-left: 3px solid #22d3ee; }
+  .panel h2 { margin: 0 0 12px; font-size: 16px; }
+  .feed div { padding: 10px 0; border-bottom: 1px solid #1f1f33; font-size: 14px; color: #6b7280; }
+  .chart { height: 160px; border-radius: 14px; background: linear-gradient(180deg, rgba(99,102,241,.5), rgba(168,85,247,.05)); }
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav class="side">
+    <a class="on" href="#">📊 Overview</a><a href="#">⚙️ Pipelines</a><a href="#">👥 Team</a><a href="#">🔔 Alerts</a>
+  </nav>
+  <main>
+    <h1>Overview</h1>
+    <div class="sub"><span class="live"></span>Live: all systems operational</div>
+    <div class="stats">
+      <div class="stat"><div class="k">Revenue</div><div class="v">$48.2k</div><div class="d">+12.5% ↑</div></div>
+      <div class="stat"><div class="k">Active users</div><div class="v">2,847</div><div class="d">+8.1% ↑</div></div>
+      <div class="stat"><div class="k">Conversion</div><div class="v">3.24%</div><div class="d">+0.4% ↑</div></div>
+      <div class="stat"><div class="k">Uptime</div><div class="v">99.9%</div><div class="d">+0.1% ↑</div></div>
+    </div>
+    <div class="panel"><h2>🚀 Performance</h2><div class="chart"></div></div>
+    <div class="panel"><h2>Recent activity</h2>
+      <div class="feed"><div>Sarah deployed v2.4.1 to production</div><div>Alex merged PR #482</div><div>New user signed up from Berlin</div></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
